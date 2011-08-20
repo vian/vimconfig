@@ -80,6 +80,7 @@ nnoremap ; :
 au FocusLost * :wa
 
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 inoremap jj <ESC>
 
