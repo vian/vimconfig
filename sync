@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rsync -raz --size-only --progress --delete ~/.vim ~/.vimrc ~/.gvimrc `dirname $0`
