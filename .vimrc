@@ -84,13 +84,13 @@ nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
 inoremap jj <ESC>
 
-command Nt NERDTree
+command! Nt NERDTree
 
 if version >= 700
 "   По умолчанию проверка орфографии выключена.
     setlocal spell spelllang=
     setlocal nospell
-    function ChangeSpellLang()
+    function! ChangeSpellLang()
         if &spelllang =~ "en_us"
             setlocal spell spelllang=ru
             echo "spelllang: ru"
