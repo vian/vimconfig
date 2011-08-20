@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SF=`dirname $0`
+cp -R $SF/.* ~/dev/
+echo '=== Done. ==='
