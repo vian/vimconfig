@@ -83,6 +83,8 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 
 inoremap jj <ESC>
 
+command Nt NERDTree
+
 if version >= 700
 "   По умолчанию проверка орфографии выключена.
     setlocal spell spelllang=
