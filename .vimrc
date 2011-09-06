@@ -81,10 +81,15 @@ au FocusLost * :wa
 
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+nnoremap <leader>nt :NERDTree<CR>
 
 inoremap jj <ESC>
 
-command! Nt NERDTree
+let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
+let Tlist_WinWidth = 50
+map <F6> :!/opt/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+nmap <silent> <F5> :NERDTreeToggle<CR>
 
 if version >= 700
 "   По умолчанию проверка орфографии выключена.
