@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/vian/dev/gloria/Gloria'
-let g:netrw_dirhist_2='/Users/vian/dev/uncensor_extension'
-let g:netrw_dirhist_3='/Users/vian/dev/houseoflife/extensions/Dropdown list of most visited links'
