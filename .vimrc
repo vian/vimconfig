@@ -87,7 +87,10 @@ inoremap jj <ESC>
 
 let Tlist_Ctags_Cmd = "/opt/local/bin/ctags"
 let Tlist_WinWidth = 50
-map <F6> :!/opt/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F14> :!/opt/local/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F13> :TlistToggle<CR>
+map <F18> :N<CR>
+map <F19> :n<CR>
 
 nmap <silent> <F5> :NERDTreeToggle<CR>
 
